@@ -19,5 +19,31 @@ A secure MEAN stack application demonstrating:
 - Validation: Zod
 - Logging: Morgan
 
+Owner Register
+
+![alt text](image.png)
+
+Owner Login
+
+![alt text](image-1.png)
+
+Owner Dashboard & seft Recharge here & transfer Monery by the Direct User Child & see the Statement
+
+![alt text](image-2.png)
+
+Owner Balance 
+
+![alt text](image-3.png)
 
 
+Owner can register the new User 
+
+![alt text](image-4.png)
+
+Owner See the Downline
+
+![alt text](image-5.png)
+
+Owner Can change the password of next user 
+
+![alt text](image-6.png)
