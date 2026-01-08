@@ -1,0 +1,67 @@
+.dashboard-wrapper {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #f8f9ff, #e9ecef);
+}
+
+.dashboard-icon {
+  font-size: 2rem;
+  color: #0d6efd;
+}
+
+.card {
+  border-radius: 14px;
+}
+
+.card-body {
+  padding: 1.3rem 1.5rem;
+}
+
+.balance-card {
+  border-left: 4px solid #0d6efd;
+  background: linear-gradient(135deg, #f3f6ff, #ffffff);
+}
+
+.admin-card {
+  border-left: 4px solid #6610f2;
+}
+
+.table thead th {
+  border-bottom-width: 2px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+  font-size: 0.85rem;
+}
+
+.form-control,
+.form-select {
+  border-radius: 0.6rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+}
+
+.btn {
+  border-radius: 999px;
+}
+
+.badge {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1.1rem 1.2rem;
+  }
+
+  .dashboard-icon {
+    font-size: 1.6rem;
+  }
+}

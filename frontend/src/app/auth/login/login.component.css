@@ -1,0 +1,28 @@
+.auth-wrapper {
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+justify-content: center;
+padding: 20px 0px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.card-body {
+  padding: 2rem 2.2rem;
+}
+
+.card-title i {
+  font-size: 1.4rem;
+}
+
+input.ng-invalid.ng-touched {
+  border-color: #dc3545;
+}
+
+.badge {
+  font-size: 0.8rem;
+}

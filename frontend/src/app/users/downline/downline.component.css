@@ -1,0 +1,41 @@
+.my-downline-wrapper {
+  min-height: calc(100vh - 64px);
+  background: radial-gradient(circle at top left, #f8f9ff, #e9ecef);
+}
+
+.downline-icon {
+  font-size: 2rem;
+  color: #0d6efd;
+}
+
+.downline-item {
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.downline-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0d6efd, #6f42c1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.card-body {
+  padding: 0.9rem 1rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 576px) {
+  .downline-icon {
+    font-size: 1.6rem;
+  }
+}

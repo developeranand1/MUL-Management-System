@@ -1,0 +1,81 @@
+<div class="create-user-wrapper">
+  <div class="container py-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-5 col-md-7">
+        <div class="card shadow-sm border-0 create-user-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <i class="bi bi-person-plus-fill create-user-icon me-2"></i>
+              <div>
+                <h3 class="mb-0">Create Next-Level User</h3>
+                <small class="text-muted">
+                  Create a direct child / next-level account
+                </small>
+              </div>
+            </div>
+
+            <!-- Username -->
+            <div class="mb-3">
+              <label class="form-label">
+                <i class="bi bi-person me-1 text-primary"></i>
+                Username
+              </label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-person-circle"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  [(ngModel)]="username"
+                  name="username"
+                  placeholder="Enter username"
+                />
+              </div>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+              <label class="form-label">
+                <i class="bi bi-lock-fill me-1 text-success"></i>
+                Password
+              </label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-shield-lock"></i>
+                </span>
+                <input
+                  type="password"
+                  class="form-control"
+                  [(ngModel)]="password"
+                  name="password"
+                  placeholder="Enter password"
+                />
+              </div>
+              <small class="text-muted">
+                Use at least 6 characters for better security.
+              </small>
+            </div>
+
+            <!-- Action -->
+            <div class="d-flex justify-content-end mt-3">
+              <button
+                type="button"
+                class="btn btn-primary rounded-pill"
+                (click)="create()"
+              >
+                <i class="bi bi-check2-circle me-1"></i>
+                Create User
+              </button>
+            </div>
+          </div>
+
+          <div class="card-footer text-center small text-muted">
+            <i class="bi bi-info-circle me-1"></i>
+            New user will be created as your next-level child.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

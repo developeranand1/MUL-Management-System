@@ -1,0 +1,76 @@
+.downline-node {
+  position: relative;
+  margin-left: 1.2rem;
+  padding-left: 1.2rem;
+  margin-top: 0.75rem;
+}
+
+/* vertical connector line */
+.downline-node::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0.35rem;
+  bottom: -0.2rem;
+  border-left: 1px dashed #ced4da;
+}
+
+/* horizontal connector from parent to card */
+.downline-node-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #e0e4ea;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+.downline-node-card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -1.2rem;
+  width: 1.2rem;
+  border-top: 1px dashed #ced4da;
+}
+
+/* root node (first node) – remove left line */
+.downline-node:first-child::before {
+  top: 1.1rem;
+}
+
+/* avatar */
+.downline-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0d6efd, #6f42c1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.downline-children {
+  margin-top: 0.4rem;
+}
+
+/* responsive tweaks */
+@media (max-width: 576px) {
+  .downline-node {
+    margin-left: 0.9rem;
+    padding-left: 0.9rem;
+  }
+
+  .downline-node-card {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .downline-avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+}

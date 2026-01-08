@@ -1,0 +1,103 @@
+<!-- <h2>Admin Users (Owner's Level-1)</h2>
+
+<table border="1" cellpadding="6">
+  <tr><th>Username</th><th>UserId</th><th>Balance</th><th>Action</th></tr>
+
+  <tr *ngFor="let u of users">
+    <td>{{ u.username }}</td>
+    <td><code>{{ u._id }}</code></td>
+    <td>{{ u.balance }}</td>
+    <td>
+      <button (click)="goCredit(u._id)">Credit</button>
+      <button (click)="viewDownline(u._id)">View Downline</button>
+
+    </td>
+  </tr>
+</table> -->
+
+
+<div class="admin-users-wrapper">
+  <div class="container py-4">
+
+    <!-- Heading -->
+    <div class="d-flex align-items-center mb-4">
+      <i class="bi bi-people-fill admin-users-icon me-2"></i>
+      <div>
+        <h3 class="mb-0">Admin Users (Owner's Level-1)</h3>
+        <small class="text-muted">Manage direct children (owner-level) users</small>
+      </div>
+    </div>
+
+    <!-- Table Card -->
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+
+        <div class="table-responsive">
+          <table class="table table-sm table-striped align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>Username</th>
+                <th>User ID</th>
+                <th class="text-end">Balance</th>
+                <th class="text-center" style="width:180px;">Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr *ngFor="let u of users">
+                <td>
+                  <i class="bi bi-person-circle me-1 text-muted"></i>
+                  {{ u.username }}
+                </td>
+
+                <td>
+                  <code>{{ u._id }}</code>
+                </td>
+
+                <td class="text-end fw-semibold">
+                  <span [ngClass]="{
+                    'text-success': u.balance > 0,
+                    'text-danger': u.balance < 0,
+                    'text-muted':  u.balance === 0
+                  }">
+                    {{ u.balance | number:'1.2-2' }}
+                  </span>
+                </td>
+
+                <td class="text-center">
+                  <div class="btn-group btn-group-sm">
+                    <button
+                      class="btn btn-outline-primary"
+                      (click)="goCredit(u._id)"
+                      title="Credit user"
+                    >
+                      <i class="bi bi-cash-coin me-1"></i> Credit
+                    </button>
+
+                    <button
+                      class="btn btn-outline-secondary"
+                      (click)="viewDownline(u._id)"
+                      title="View user downline"
+                    >
+                      <i class="bi bi-diagram-3 me-1"></i> Downline
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr *ngIf="!users.length">
+                <td colspan="4" class="text-center text-muted py-3">
+                  <i class="bi bi-inbox me-1"></i>
+                  No users found.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
