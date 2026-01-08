@@ -19,6 +19,9 @@ A secure MEAN stack application demonstrating:
 - Validation: Zod
 - Logging: Morgan
 
+
+# OWNER
+
 Owner Register
 
 ![alt text](image.png)
@@ -40,6 +43,11 @@ Owner can register the new User
 
 ![alt text](image-4.png)
 
+
+Owner can Send Money to Direct User
+
+![alt text](image-9.png)
+
 Owner See the Downline
 
 ![alt text](image-5.png)
@@ -47,3 +55,31 @@ Owner See the Downline
 Owner Can change the password of next user 
 
 ![alt text](image-6.png)
+
+
+# ADMIN
+
+Admin Register here 
+
+![alt text](image-7.png)
+
+
+admin login here
+
+![alt text](image-8.png)
+
+admin see the all users in level wise and admin can credit the balance
+
+![alt text](image-10.png)
+
+![alt text](image-11.png)
+
+
+Admin can see the all donwline of User list 
+
+![alt text](image-12.png)
+
+
+Admin Balance Summary
+
+![alt text](image-13.png)
