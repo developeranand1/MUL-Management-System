@@ -83,3 +83,26 @@ Admin can see the all donwline of User list
 Admin Balance Summary
 
 ![alt text](image-13.png)
+
+
+
+User Login Here & User dashboard & See here balance & tranfer amount any child of next user 
+
+![alt text](image-14.png)
+![alt text](image-15.png)
+
+user can create any next child of users here 
+
+![alt text](image-16.png)
+
+User See your downline list 
+
+![alt text](image-17.png)
+
+
+User can change the pasword your any child of user here 
+![alt text](image-18.png)
+
+User can transfer the amount your child of users 
+
+![alt text](image-19.png)
